@@ -12,6 +12,10 @@ import LogOut from "./LogOut";
 import Navbar from "./Navbar";
 import Form2 from "./Form2";
 import Register from "./Register";
+import Todo from "./Todo";
+import Add from "./Table/Add";
+import Edit from "./Table/Edit";
+import View from "./Table/View";
 
 store.subscribe(() => console.log(store.getState()));
 const HolderName = createContext();
@@ -36,6 +40,10 @@ const App = () => {
                 <Route exact path="/logout" component={LogOut} />
                 <Route exact path="/materialform" component={Form2} />
                 <Route exact path="/register" component={Register} />
+                <Route exact path="/todo" component={Todo} />
+                <Route exact path="/user" component={Add} />
+                <Route exact path="/user/edit/:id" component={Edit} />
+                <Route exact path="/user/view/:id" component={View} />
               </Router>
             </Provider>
           </Hello.Provider>

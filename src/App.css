@@ -199,7 +199,7 @@ li {
 
   .mobile-menu-link {
     background-color: rgb(40, 40, 122);
-    height: 10rem;
+    height: 12rem;
     display: grid;
     grid-column: 2/5;
     align-items: center;
@@ -212,7 +212,7 @@ li {
   }
 
   .mobile-menu-link ul {
-    height: 10rem;
+    height: 12rem;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
